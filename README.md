@@ -15,5 +15,8 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
+
+![image](https://github.com/nicolas-alexandris/training_job/blob/main/visual_tutorial.png) = 250x250)
+
 ![alt text](visual_tutorial.png =500x500)
 ![alt text](visual_job.png)
