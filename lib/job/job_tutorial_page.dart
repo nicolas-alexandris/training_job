@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-class TutorialPage extends StatelessWidget {
-  const TutorialPage({super.key});
+class JobTutorialPage extends StatelessWidget {
+  const JobTutorialPage({super.key});
 
   @override
   Widget build(BuildContext context) {
