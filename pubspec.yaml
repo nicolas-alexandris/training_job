@@ -38,6 +38,9 @@ dependencies:
   cupertino_icons: ^1.0.2
   smooth_page_indicator: ^1.0.0+2
   animate_do: ^3.0.2
+  animated_gradient: ^0.0.2
+  weather: ^2.0.1
+  animate_gradient: ^0.0.2
 
 dev_dependencies:
   flutter_test:
