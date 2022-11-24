@@ -1,8 +1,10 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:animate_gradient/animate_gradient.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:training_job/weather/weather_main_page.dart';
 
 class WeatherWelcomePage extends StatefulWidget {
   const WeatherWelcomePage({super.key});
@@ -83,37 +85,48 @@ class _WeatherWelcomePageState extends State<WeatherWelcomePage> {
                     Stack(
                       alignment: Alignment.center,
                       children: [
-                        Container(
-                          height: 85,
-                          width: 85,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(80),
-                            border: Border.all(
-                              width: 2,
-                              color: Colors.blueAccent,
+                        Pulse(
+                          child: Container(
+                            height: 85,
+                            width: 85,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(80),
+                              border: Border.all(
+                                width: 2,
+                                color: Colors.blueAccent,
+                              ),
                             ),
                           ),
                         ),
-                        Container(
-                          width: 70,
-                          height: 70,
-                          decoration: BoxDecoration(
-                            gradient: LinearGradient(
-                              begin: Alignment.topCenter,
-                              end: Alignment.bottomCenter,
-                              colors: [
-                                Color.fromARGB(255, 150, 227, 255),
-                                Color.fromARGB(255, 21, 110, 183),
-                              ],
+                        FadeIn(
+                          child: Container(
+                            width: 70,
+                            height: 70,
+                            decoration: BoxDecoration(
+                              gradient: LinearGradient(
+                                begin: Alignment.topCenter,
+                                end: Alignment.bottomCenter,
+                                colors: [
+                                  Color.fromARGB(255, 150, 227, 255),
+                                  Color.fromARGB(255, 21, 110, 183),
+                                ],
+                              ),
+                              borderRadius: BorderRadius.circular(40),
                             ),
-                            borderRadius: BorderRadius.circular(40),
-                          ),
-                          child: IconButton(
-                            onPressed: () {},
-                            icon: Icon(
-                              Icons.arrow_forward,
-                              color: Colors.white,
-                              size: 45,
+                            child: IconButton(
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => WeatherMainPage(),
+                                  ),
+                                );
+                              },
+                              icon: Icon(
+                                Icons.arrow_forward,
+                                color: Colors.white,
+                                size: 45,
+                              ),
                             ),
                           ),
                         ),

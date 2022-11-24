@@ -41,10 +41,10 @@ dependencies:
   animated_gradient: ^0.0.2
   weather: ^2.0.1
   animate_gradient: ^0.0.2
-
-dev_dependencies:
   flutter_test:
     sdk: flutter
+
+dev_dependencies:
 
   
   
